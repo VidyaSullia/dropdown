@@ -23,12 +23,6 @@ public class Bank {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
-		
-	/*	 WebElement down = driver.findElement(By.xpath("//label[text()='Selenium Commands']"));
-		 JavascriptExecutor js=(JavascriptExecutor)driver;
-	     js.executeScript("arguments[0].scrollIntoView(true)", down);
-		*/
-		
 		WebElement sel = driver.findElement(By.id("continentsmultiple"));
 		
 		Select s=new Select(sel);
