@@ -21,13 +21,7 @@ public class Bank {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://toolsqa.com/automation-practice-form/");
 		driver.manage().window().maximize();
-		
-		
-		
-	/*	 WebElement down = driver.findElement(By.xpath("//label[text()='Selenium Commands']"));
-		 JavascriptExecutor js=(JavascriptExecutor)driver;
-	     js.executeScript("arguments[0].scrollIntoView(true)", down);
-		*/
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 		WebElement sel = driver.findElement(By.id("continentsmultiple"));
 		
@@ -53,6 +47,7 @@ public class Bank {
 		System.out.println(text1);
 		
 		driver.quit();
+		driver.close();
 	}
 	
 	
