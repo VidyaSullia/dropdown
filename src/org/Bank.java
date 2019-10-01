@@ -21,7 +21,7 @@ public class Bank {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://toolsqa.com/automation-practice-form/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		
 		
 		
 	/*	 WebElement down = driver.findElement(By.xpath("//label[text()='Selenium Commands']"));
