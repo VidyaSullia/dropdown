@@ -46,8 +46,7 @@ public class Bank {
 		String text1 = first.getText();
 		System.out.println(text1);
 		
-		driver.quit();
-		driver.close();
+	//	driver.quit();
 	}
 	
 	
